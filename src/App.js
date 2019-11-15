@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import UserDisplay from './components/UserDisplay/UserDisplay';
+import NavButtons from './components/NavButtons/NavButtons';
+import Header from './components/Header/Header';
 // let userList = require('./Data').default;
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
   
   return (
     <div className="App">
+      <Header />
       <UserDisplay />
+      <NavButtons />
     </div>
   );
 }

@@ -26,23 +26,25 @@ export default class UserDisplay extends Component {
         const {id, name, city, country, title, employer, favoriteMovies} = selectedUser
         const {first, last} = name
         return (
-            <div>
-                <div>{first +' '+ last}</div>
-                <div className='userInfo'>
-                    <strong>From:</strong>
-                     {`${city}, ${country}`}
-                    <strong>Job Title:</strong>
-                     {title}
-                    <strong>Employer:</strong>
-                     {employer}
+            <div className='userCont'>
+            <div className="userDisplay">
+                    <div><strong>{first +' '+ last}</strong></div>
+                    <hr/>
+                    <div className='userInfo'>
+                        <strong>From:</strong>
+                        {`${city}, ${country}`}
+                        <strong>Job Title:</strong>
+                        {title}
+                        <strong>Employer:</strong>
+                        {employer}
+                        <hr/>
+                        <strong>Favorite Movies:</strong>
+                        {favoriteMovies}
+                    </div>
+                   
                 </div>
-                <button onClick={this.userIncrement}>
-                    Next
-                </button>
-                <button onClick={this.userDecrement}>
-                    Previous
-                </button>
             </div>
+  
         )
     }
 }

@@ -1,0 +1,23 @@
+.navCont{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.whitebtn{
+    margin-top: 10px;
+    background: #282C34;
+    color: white;
+    border-radius: 7px;
+}
+
+.bluebtn{
+    background: #2c93d1;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+
+}
+
