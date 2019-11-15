@@ -9,6 +9,7 @@
     background: #282C34;
     color: white;
     border-radius: 7px;
+    border-color: #282C34;
 }
 
 .bluebtn{
@@ -16,6 +17,7 @@
     color: white;
     margin: 10px;
     border-radius: 7px;
+    border-color: #282C34;
     /* display: flex; */
     /* justify-content: space-between; */
 

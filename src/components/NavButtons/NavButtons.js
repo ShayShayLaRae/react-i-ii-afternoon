@@ -4,9 +4,10 @@ import './NavButtons.css';
 
 export default class NavButtons extends Component {
     render() {
+        const {inc, dec} = this.props
         return (
             <div className='navCont'>
-                <button className='whitebtn' onClick={this.userIncrement}>
+                <button className='whitebtn' onClick={inc}>
                     Next
                     </button>
                 <div>
@@ -15,7 +16,7 @@ export default class NavButtons extends Component {
                     <button className='bluebtn'>New</button>
                 </div>
 
-                <button className='whitebtn' onClick={this.userDecrement}>
+                <button className='whitebtn' onClick={dec}>
                     Previous
                     </button>
             </div>
